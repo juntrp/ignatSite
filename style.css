@@ -41,14 +41,45 @@ a {
 }
 
 #image {
-  width: 330px;
-  height: 470px;
-
   background: url(images/capybaraAI.jpg);
   background-size: 150%;
   background-position: 40%;
   filter: drop-shadow(30px 30px 50px rgba(0, 0, 0, 0.25));
   border-radius: 45px 0px;
+}
+
+@media screen and (min-width: 621px) {
+  #image {
+    width: 330px;
+    height: 470px;
+  }
+  #desc2 {
+    font-size: 0;
+  }
+}
+@media screen and (max-width: 620px) {
+  #image {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+  #image img {
+    width: 0;
+    height: 0;
+  }
+  #image button {
+    width: 0;
+    height: 0;
+  }
+  #desc {
+    font-size: 0;
+  }
+  #desc2 {
+    margin-left: 2%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
 #ignatka {
