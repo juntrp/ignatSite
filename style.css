@@ -1,231 +1,93 @@
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1%;
+@font-face {
+  font-family: Gilroy;
+  src: url("Gilroy-Semibold.ttf");
 }
 
-a {
+.ignatka {
+  /* color: rgb(92, 213, 253); */
+  color: rgb(243, 125, 210);
+  text-decoration-line: none;
+  font-family: "Gilroy";
+  font-size: 330%;
+  margin-bottom: 0%;
+  margin-top: 20%;
+}
+
+p {
+  color: white;
+  font-family: "Gilroy";
+  font-size: 150%;
+}
+
+p a {
+  color: rgb(125, 131, 243);
+  transition: 0.3s;
+}
+
+.container button {
+  color: rgb(243, 125, 210);
+  border-color: rgb(243, 125, 210);
+  transition: 0.3s;
+}
+
+.container button:hover {
+  color: rgb(255, 253, 254);
+  background-color: rgb(242, 111, 205);
+  border-color: rgb(242, 111, 205);
+  transition: 0.3s;
+}
+
+.btn-outline-primary {
+  font-family: "Gilroy";
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(242, 111, 205);
+  --bs-btn-hover-border-color: rgb(242, 111, 205) !important;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(242, 111, 205);
+  --bs-btn-active-border-color: rgb(242, 111, 205);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.tinkoff {
+  margin-top: 3%;
+  font-size: 100%;
+}
+
+.container .b1 {
+  border-color: rgb(210, 232, 244);
+  color: white;
+  border-radius: 15px;
+}
+
+.container .b1 b {
+  color: rgb(165, 216, 243);
+}
+
+.container .b1:hover {
+  background-color: grey;
+}
+
+.container a {
   text-decoration: none;
 }
 
-#rectangle {
-  height: 850px;
-  align-self: center;
-
-  background: #ffffff;
-  box-shadow: 40px 40px 30px rgba(255, 255, 255, 0.25);
-  border-radius: 45px;
+.error {
+  margin-top: 20%;
+  color: red;
+  font-size: 500%;
 }
 
-@media screen and (max-width: 2000px) {
-  #rectangle {
-    width: 600px;
-  }
+h3 {
+  color: red;
 }
 
-@media screen and (max-width: 620px) {
-  #rectangle {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 2000px) {
-  #container {
-    margin-top: 1%;
-  }
-}
-@media screen and (max-width: 500px) {
-  #container {
-    margin-top: 5%;
-  }
+.order {
+  margin-top: 17%;
 }
 
-#image {
-  background: url(images/capybaraAI.jpg);
-  background-size: 150%;
-  background-position: 40%;
-  filter: drop-shadow(30px 30px 50px rgba(0, 0, 0, 0.25));
-  border-radius: 45px 0px;
+.b2 {
+  margin-top: 2%;
 }
 
-@media screen and (min-width: 621px) {
-  #image {
-    width: 330px;
-    height: 470px;
-  }
-  #desc2 {
-    font-size: 0;
-  }
-}
-@media screen and (max-width: 620px) {
-  #image {
-    width: 0;
-    height: 0;
-    font-size: 0;
-  }
-  #image img {
-    width: 0;
-    height: 0;
-  }
-  #image button {
-    width: 0;
-    height: 0;
-  }
-  #desc {
-    font-size: 0;
-  }
-  #desc2 {
-    margin-left: 2%;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-  }
-}
 
-#ignatka {
-  position: absolute;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  margin-left: 110%;
-}
-
-#linkVK {
-  position: absolute;
-  margin-left: 110%;
-  margin-top: 30%;
-  transition: 0.3s;
-
-  height: 15%;
-  width: 60%;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 130%;
-
-  background: #adadad;
-  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-#linkVK img {
-  width: 42px;
-  margin-bottom: -6.5%;
-}
-#linkTG {
-  position: absolute;
-  margin-left: 110%;
-  margin-top: 60%;
-  transition: 0.3s;
-
-  height: 15%;
-  width: 60%;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 130%;
-
-  background: #adadad;
-  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-#linkTG img {
-  width: 42px;
-  margin-bottom: -6.5%;
-}
-#linkDC {
-  position: absolute;
-  margin-left: 110%;
-  margin-top: 90%;
-  transition: 0.3s;
-
-  height: 15%;
-  width: 60%;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 130%;
-
-  background: #adadad;
-  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-#linkDC img {
-  width: 42px;
-  margin-bottom: -6.5%;
-}
-#linkPR {
-  position: absolute;
-  margin-left: 110%;
-  margin-top: 120%;
-  transition: 0.3s;
-
-  height: 15%;
-  width: 60%;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 130%;
-
-  background: #adadad;
-  box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  border-style: none;
-}
-#linkPR img {
-  width: 42px;
-  margin-bottom: -6.5%;
-}
-
-#desc {
-  margin-left: 2%;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-}
-
-#linkVK:hover {
-  transition: 0.3s;
-  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.25);
-
-  margin-left: 109%;
-  margin-top: 29%;
-
-  cursor: pointer;
-}
-
-#linkTG:hover {
-  transition: 0.3s;
-  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.25);
-
-  margin-left: 109%;
-  margin-top: 59%;
-
-  cursor: pointer;
-}
-
-#linkDC:hover {
-  transition: 0.3s;
-  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.25);
-
-  margin-left: 109%;
-  margin-top: 89%;
-
-  cursor: pointer;
-}
-
-#linkPR:hover {
-  transition: 0.3s;
-  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.25);
-
-  margin-left: 109%;
-  margin-top: 119%;
-
-  cursor: pointer;
-}
